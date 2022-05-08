@@ -49,10 +49,6 @@ pip install paddlepaddle-gpu==2.1.2
                                             
 更多安装方法可以参考：[Paddle安装指南](https://www.paddlepaddle.org.cn/)
 
-* 安装requirements
-```bash
-pip install -r requirements.txt
-```
 
 ## 4. 开始使用
 
