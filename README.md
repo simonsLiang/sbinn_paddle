@@ -19,7 +19,7 @@
 
 **参考repo:** [https://github.com/lu-group/sbinn](https://github.com/lu-group/sbinn)
                                         
-快速使用可参考[AIStudio]()        
+快速使用可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3966656?contributionType=1&shared=1)        
 
 感谢百度飞桨提供的算力支持
 
@@ -76,7 +76,7 @@ pip install paddlepaddle-gpu==2.1.2
 
 ## 4. 开始使用
 
-此部分可参考[AIStudio]()       
+此部分可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3966656?contributionType=1&shared=1)       
 运行以下命令生成数据                                            
 ```bash
 python  data_generation.py                                           
