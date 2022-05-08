@@ -13,7 +13,7 @@
 
 ## 1. 简介
 
-本项目为使用paddle复现sbinn项目,lettuce是一个基于LBM的计算流体动力学框架,具有gpu加速计算、二维和三维快速成型等优点。
+本项目为使用paddle复现sbinn项目。
 
 **论文:** [Lettuce: PyTorch-based Lattice Boltzmann Framework](https://arxiv.org/pdf/2106.12929.pdf)
 
