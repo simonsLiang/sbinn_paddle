@@ -67,7 +67,7 @@ python  sbinn_paddle.py
 
 训练完成后得到variable.csv文件,再运行以下命令得到最终的生成参数，保存于vallist.csv文件中                                                  
 ```bash
-python  variable_to_parameter_transform.py.py                                           
+python  variable_to_parameter_transform.py                                        
 ```  
                                             
 接着利用生成的参数得到预测数据                                                  
