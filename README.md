@@ -51,6 +51,8 @@ epoch=600000:
 </div> 
 
 ps:由于模型输入为在特定数据中随机选取1/5，所以每次运行结果会有一定差异
+
+
 训练日志,以及生成的variable.csv,vallist.csv可在[BaiduYun](https://www.paddlepaddle.org.cn/)下载
 
 ## 3. 准备环境
