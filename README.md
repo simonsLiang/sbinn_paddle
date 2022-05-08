@@ -45,7 +45,7 @@
     <img src="./figs/G60e.png" width=300">
     <img src="./figs/IG60e.png" width=300">
 </div> 
-<div align="center">epoch=400000</div> 
+<div align="center">epoch=600000</div> 
 
 ## 3. 准备环境
 
