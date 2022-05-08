@@ -76,6 +76,7 @@ pip install paddlepaddle-gpu==2.1.2
 
 ## 4. 开始使用
 
+此部分可参考[AIStudio]()       
 运行以下命令生成数据                                            
 ```bash
 python  data_generation.py                                           
