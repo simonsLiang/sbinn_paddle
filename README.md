@@ -44,7 +44,7 @@ git clone https://github.com/simonsLiang/sbinn_paddle
 ```bash
 # 需要安装2.1.2的Paddle版本
 # 安装GPU版本的Paddle
-pip install paddlepaddle-gpu==2.1.1
+pip install paddlepaddle-gpu==2.1.2
 
 更多安装方法可以参考：[Paddle安装指南](https://www.paddlepaddle.org.cn/)。
 
