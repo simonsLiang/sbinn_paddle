@@ -38,7 +38,8 @@ epoch=400000:
     <img src="./figs/IG40e.png" width=300">
 </div> 
 
-
+<div>
+</div> 
 epoch=600000:
 <div>
     <img src="./figs/Ip60e.png" width=300">
