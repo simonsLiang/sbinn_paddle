@@ -15,7 +15,7 @@
 
 本项目为使用paddle复现sbinn项目。
 
-**论文:** [Lettuce: PyTorch-based Lattice Boltzmann Framework](https://arxiv.org/pdf/2106.12929.pdf)
+**论文:** [Systems Biology: Identifiability analysis and parameter identification via systems-biology informed neural networks](https://arxiv.org/pdf/2202.01723.pdf)
 
 **参考repo:** [https://github.com/lu-group/sbinn](https://github.com/lu-group/sbinn)
                                         
@@ -54,7 +54,7 @@ epoch=600000:
 ps:由于模型输入为在特定数据中随机选取1/5，所以每次运行结果会有一定差异
 
 
-训练日志,以及生成的variable.csv,vallist.csv可在[BaiduYun](https://pan.baidu.com/s/1_m9r1zUZ2CXgmOpGx1COVA?pwd=p6us)下载
+训练日志,以及生成的variable.csv,vallist.csv可在[BaiduYun](https://pan.baidu.com/s/10XljlwKKUdJXrQ7VmL7gTA?pwd=vfnr)下载
 
 ## 3. 准备环境
 
@@ -109,4 +109,4 @@ python  plot.py
 
 
 ## 6. 参考链接与文献
-[Lettuce: PyTorch-based Lattice Boltzmann Framework](https://arxiv.org/pdf/2106.12929.pdf)
+[Systems Biology: Identifiability analysis and parameter identification via systems-biology informed neural networks](https://arxiv.org/pdf/2202.01723.pdf)
