@@ -27,9 +27,25 @@
 ## 2. 复现精度
 
 论文fig13复现结果：
+
 <div>
-    <img src="./figs/output2.png" width=250">
+    <img src="./figs/Ip40e.png" width=300">
+    <img src="./figs/Ii40e.png" width=300">
 </div>     
+<div>
+    <img src="./figs/G40e.png" width=300">
+    <img src="./figs/IG40e.png" width=300">
+</div> 
+<div align="center">epoch=400000</div> 
+<div>
+    <img src="./figs/Ip60e.png" width=300">
+    <img src="./figs/Ii60e.png" width=300">
+</div>     
+<div>
+    <img src="./figs/G60e.png" width=300">
+    <img src="./figs/IG60e.png" width=300">
+</div> 
+<div align="center">epoch=400000</div> 
 
 ## 3. 准备环境
 
