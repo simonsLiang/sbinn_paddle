@@ -176,7 +176,7 @@ def sbinn(data_t, data_y, meal_t, meal_q):
 
     model.compile(
         "adam",
-        lr=1e-6,
+        lr=1e-7,
         loss_weights=[1, 1, 1e-2, 1, 1, 1, 1e-2],
         external_trainable_variables=var_list_,
     )
