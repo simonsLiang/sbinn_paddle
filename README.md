@@ -29,6 +29,7 @@
 论文fig13复现结果：
 （蓝色实线为目标值，红色虚线为预测值）
 
+### 1. 学习率为1e-6
 epoch=400000:
 <div>
     <img src="./figs/Ip40e.png" width=300">
@@ -51,8 +52,28 @@ epoch=600000:
     <img src="./figs/IG60e.png" width=300">
 </div> 
 
-ps:由于模型输入为在特定数据中随机选取1/5，所以每次运行结果会有一定差异
+### 2. 学习率为5e-8
+epoch=400000:
+<div>
+    <img src="./figs/Ip40e2.png" width=300">
+    <img src="./figs/Ii40e2.png" width=300">
+</div>     
+<div>
+    <img src="./figs/G40e2.png" width=300">
+    <img src="./figs/IG40e2.png" width=300">
+</div> 
 
+<div>
+</div> 
+epoch=600000:
+<div>
+    <img src="./figs/Ip60e2.png" width=300">
+    <img src="./figs/Ii60e2.png" width=300">
+</div>     
+<div>
+    <img src="./figs/G60e2.png" width=300">
+    <img src="./figs/IG60e2.png" width=300">
+</div> 
 
 训练日志,以及生成的variable.csv,vallist.csv可在[BaiduYun](https://pan.baidu.com/s/10XljlwKKUdJXrQ7VmL7gTA?pwd=vfnr)下载
 
