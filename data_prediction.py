@@ -1,3 +1,7 @@
+# code was heavily based on https://github.com/lu-group/sbinn
+# Users should be careful about adopting these functions in any commercial matters.
+# https://github.com/lu-group/sbinn#license
+
 import numpy as np
 from scipy.integrate import odeint
 
