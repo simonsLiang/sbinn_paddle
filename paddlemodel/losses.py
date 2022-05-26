@@ -1,3 +1,7 @@
+# code was heavily based on https://github.com/lululxvi/deepxde
+# Users should be careful about adopting these functions in any commercial matters.
+# https://github.com/lululxvi/deepxde#license
+
 import paddle
 def mean_squared_error(y_true, y_pred):
     return paddle.mean(paddle.square(y_true - y_pred))

@@ -1,3 +1,7 @@
+# code was heavily based on https://github.com/lululxvi/deepxde
+# Users should be careful about adopting these functions in any commercial matters.
+# https://github.com/lululxvi/deepxde#license
+
 import paddle
 
 class NN(paddle.nn.Layer):
@@ -5,7 +9,6 @@ class NN(paddle.nn.Layer):
 
     def __init__(self):
         super().__init__()
-        # torch.nn.Module has variable training
         self.inputs = None
         self._input_transform = None
         self._output_transform = None

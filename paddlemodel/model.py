@@ -1,3 +1,7 @@
+# code was heavily based on https://github.com/lululxvi/deepxde
+# Users should be careful about adopting these functions in any commercial matters.
+# https://github.com/lululxvi/deepxde#license
+
 __all__ = ["Model", "TrainState", "LossHistory"]
 
 import numpy as np
@@ -90,14 +94,14 @@ class Model:
         else:
             self.external_trainable_variables = external_trainable_variables
 
-        self._compile_pytorch(lr, loss_fn, decay, loss_weights)
+        self._compile_paddle(lr, loss_fn, decay, loss_weights)
 
         # metrics may use model variables such as self.net, and thus are instantiated
         # after backend compile.
         metrics = metrics or []
         self.metrics = [metrics_module.get(m) for m in metrics]
-    def _compile_pytorch(self, lr, loss_fn, decay, loss_weights):
-        """pytorch"""
+    def _compile_paddle(self, lr, loss_fn, decay, loss_weights):
+
 
         def outputs(training, inputs):
             self.net.train(mode=training)
@@ -224,7 +228,7 @@ class Model:
         self._test()
         self.callbacks.on_train_begin()
         if optimizers.is_external_optimizer(self.opt_name):
-            self._train_pytorch_lbfgs()
+            self._train_paddle_lbfgs()
         else:
             if epochs is None:
                 raise ValueError("No epochs for {}.".format(self.opt_name))
@@ -261,7 +265,7 @@ class Model:
             if self.stop_training:
                 break
 
-    def _train_pytorch_lbfgs(self):
+    def _train_paddle_lbfgs(self):
         prev_n_iter = 0
         while prev_n_iter < optimizers.LBFGS_options["maxiter"]:
             self.callbacks.on_epoch_begin()
@@ -360,10 +364,8 @@ class Model:
         if get_num_args(operator) == 2:
             y = operator(inputs, outputs)
         elif get_num_args(operator) == 3:
-            # TODO: Pytorch backend Implementation of Auxiliary variables.
-            # y = operator(inputs, outputs, torch.as_tensor(aux_vars))
             raise NotImplementedError(
-                "Model.predict() with auxiliary variable hasn't been implemented for backend pytorch."
+                "Model.predict() with auxiliary variable hasn't been implemented."
             )
         y = y.detach().cpu().numpy()
         self.callbacks.on_predict_end()

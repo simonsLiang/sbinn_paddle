@@ -1,3 +1,7 @@
+# code was heavily based on https://github.com/lululxvi/deepxde
+# Users should be careful about adopting these functions in any commercial matters.
+# https://github.com/lululxvi/deepxde#license
+
 import sys
 import time
 import numpy as np
@@ -6,7 +10,7 @@ import config
 import gredient as grad
 from putils import list_to_str, save_animation
 
-backend_name = 'pytorch'
+backend_name = 'paddle'
 
 class Callback:
     """Callback base class.
@@ -309,7 +313,7 @@ class VariableValue(Callback):
             self.value = self.model.sess.run(self.var_list)
         elif backend_name == "tensorflow":
             self.value = [var.numpy() for var in self.var_list]
-        elif backend_name == "pytorch":
+        elif backend_name == "paddle":
             self.value = [var.detach().item() for var in self.var_list]
         print(
             self.model.train_state.epoch,
