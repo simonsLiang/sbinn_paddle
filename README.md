@@ -126,7 +126,7 @@ python  plot.py
 
 ## 5. LICENSE
 
-[Apache License 2.0](./LICENSE)
+[LICENSE](./License)
 
 
 ## 6. 参考链接与文献
