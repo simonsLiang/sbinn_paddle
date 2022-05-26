@@ -21,7 +21,7 @@
                                         
 快速使用可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3966656?contributionType=1&shared=1)        
 
-代码主要基于https://github.com/lu-group/sbinn和https://github.com/lululxvi/deepxde，在涉及商业应用时需谨慎使用！
+代码主要基于[sbinn](https://github.com/lu-group/sbinn)和[deepxde](https://github.com/lululxvi/deepxde)修改，在涉及商业应用时需谨慎使用！
 
 感谢百度飞桨提供的算力支持
 
